@@ -6,17 +6,17 @@
   <h2>StudentsList</h2>
 </div>
 
-  <!-- <div *ngIf="!isAddStudent">
+  <div *ngIf="!isAddStudent">
     <h2>Student List</h2>
-    <button (click)="addNewStudent()">Add New Student</button> -->
+    <button (click)="addNewStudent()">Add New Student</button>
     <div *ngFor="let student of studentsList">
       <app-student [studentIn]="student"></app-student>
       </div>
-  <!-- </div> -->
+  </div>
 
 
-  <!-- <div *ngIf="isAddStudent">
+  <div *ngIf="isAddStudent">
     <app-add-student (studentOut)="addStudent($event)"></app-add-student>
-  </div> -->
+  </div>
 
 
